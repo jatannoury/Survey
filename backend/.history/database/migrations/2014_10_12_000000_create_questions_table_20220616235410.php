@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users_answers', function (Blueprint $table) {
+        Schema::create('questions', function (Blueprint $table) {
             $table->id();
-            $table->string('survey_id')->unique();
-            $table->string('question_id');
-            $table->string('user_answer');
+            $table->string('type');
+            $table->string('content')->unique();
+            $table->integer('survey_id')->unique();
             $table->rememberToken();
             $table->timestamps();
         });

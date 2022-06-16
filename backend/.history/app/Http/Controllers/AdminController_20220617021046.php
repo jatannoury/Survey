@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\Question;
 use App\Models\Survey;
-use App\Models\Admin_answer;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -41,6 +40,4 @@ class AdminController extends Controller
             "survey"=>$answer
         ]);
     }
-
-    
 }

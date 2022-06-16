@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 use App\Models\Question;
 use App\Models\Survey;
-use App\Models\Admin_answer;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -26,21 +25,8 @@ class AdminController extends Controller
         $survey->save();
         return response()->json([
             "status"=>"Success",
-            "survey"=>$survey
+            "survey"=>$survey["id"]
         ]);
 
     }
-
-    public function addAnswer(Request $request){
-        $answer=new Admin_answer;
-        $answer->question_id=$request->question_id;
-        $answer->answer=$request->answer;
-        $answer->save();
-        return response()->json([
-            "status"=>"Success",
-            "survey"=>$answer
-        ]);
-    }
-
-    
 }

@@ -8,10 +8,10 @@ class UserController extends Controller
 {
     public function getSurveyId(Request $request){
         $name=$request->name;
-        $survey_id= Survey::where("name",$name)->get();
+        return Survey::where("name",$name)->get();
         return response()->json([
             "status"=>"Success",
-            "survey_id"=>$survey_id[0]["id"]
+            "survey_id"=>$survey_id->id
         ]);
     }
 }

@@ -41,6 +41,4 @@ class AdminController extends Controller
             "survey"=>$answer
         ]);
     }
-
-    
 }

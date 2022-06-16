@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('users_answers', function (Blueprint $table) {
             $table->id();
             $table->string('survey_id')->unique();
-            $table->string('question_id');
+            $table->string('question_id')->unique();
             $table->string('user_answer');
             $table->rememberToken();
             $table->timestamps();
