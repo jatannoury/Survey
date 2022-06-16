@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use App\Models\Question;
-use App\Models\Survey;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -17,16 +16,6 @@ class AdminController extends Controller
             "status"=>"Success",
             "category"=>$question
         ]);
-    }
-
-    public function addSurvey(Request $request){
-        $survey=new Survey;
-        $survey->name=$request->name;
-        $survey->save();
-        return response()->json([
-            "status"=>"Success",
-            "category"=>$survey
-        ]);
-
+        
     }
 }
