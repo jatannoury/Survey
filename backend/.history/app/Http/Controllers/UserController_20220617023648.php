@@ -17,10 +17,10 @@ class UserController extends Controller
 
     public function getAnswers(Request $request){
         $question_id=$request->question_id;
-        return Admin_answer::where("question_id",$question_id)->get();
-        // return response()->json([
-        //     "status"=>"Success",
-        //     "answers"=>$answers
-        // ]);
+        $answers=Admin_answer::where("question_id",$question_id)->get();
+        return response()->json([
+            "status"=>"Success",
+            "answers"=>$answers
+        ]);
     }
 }
