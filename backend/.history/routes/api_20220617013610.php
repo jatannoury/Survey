@@ -12,5 +12,6 @@ Route::group(['middleware' => 'api'], function($router) {
     Route::post('/refresh', [JWTController::class, 'refresh']);
     Route::post('/profile', [JWTController::class, 'profile']);
 });
-
-    Route::post('/add_question', [AdminController::class, 'addQuestion']);
+Route::group(['middleware' => 'api'], function($router) {
+    Route::post('/add_question', [JWTController::class, 'addQuestion']);
+});

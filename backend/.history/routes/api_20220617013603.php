@@ -2,8 +2,8 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\JWTController;
-use App\Http\Controllers\AdminController;
+use
+ App\Http\Controllers\JWTController;
 
 Route::group(['middleware' => 'api'], function($router) {
     Route::post('/register', [JWTController::class, 'register']);
@@ -12,5 +12,6 @@ Route::group(['middleware' => 'api'], function($router) {
     Route::post('/refresh', [JWTController::class, 'refresh']);
     Route::post('/profile', [JWTController::class, 'profile']);
 });
-
-    Route::post('/add_question', [AdminController::class, 'addQuestion']);
+Route::group(['middleware' => 'api'], function($router) {
+    Route::post('/add_question', [JWTController::class, 'addQuestion']);
+});
