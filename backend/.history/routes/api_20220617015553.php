@@ -16,5 +16,5 @@ Route::group(['middleware' => 'api'], function($router) {
 
     Route::post('/add_question', [AdminController::class, 'addQuestion']);
     Route::post('/add_survey', [AdminController::class, 'addSurvey']);
-    Route::get('/get_survey', [UserController::class, 'getSurveyId']);
+    Route::post('/get_survey', [UserController::class, 'getSurveyId']);
 

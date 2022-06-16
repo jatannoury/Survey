@@ -25,7 +25,7 @@ class AdminController extends Controller
         $survey->save();
         return response()->json([
             "status"=>"Success",
-            "survey"=>$survey
+            "category"=>$survey
         ]);
 
     }
