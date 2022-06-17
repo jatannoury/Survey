@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use App\Models\Survey;
 use Illuminate\Http\Request;
 use App\Models\Admin_answer;
-use App\Models\User_answer;
 class UserController extends Controller
 {
     public function getSurveyId(Request $request){
@@ -27,14 +26,11 @@ class UserController extends Controller
 
     public function setAnswers(Request $request){
         $user_ans=new User_Answer;
-        $user_ans->question_id=$request->question_id;
-        $user_ans->survey_id=$request->survey_id;
-        $user_ans->user_answer=$request->user_answer;
+        $user_ans=$request->question_id;
+        $user_ans=$request->survey_id;
+        $user_ans=$request->user_ans;
         $user_ans->save();
-        return response()->json([
-            "status"=>"Success",
-            "answers"=>$user_ans
-        ]);
+        
 
     }
 }

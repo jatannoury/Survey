@@ -29,7 +29,7 @@ class UserController extends Controller
         $user_ans=new User_Answer;
         $user_ans->question_id=$request->question_id;
         $user_ans->survey_id=$request->survey_id;
-        $user_ans->user_answer=$request->user_answer;
+        $user_ans=$request->user_ans;
         $user_ans->save();
         return response()->json([
             "status"=>"Success",
