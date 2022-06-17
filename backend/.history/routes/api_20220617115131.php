@@ -22,6 +22,6 @@ Route::group(['middleware' => 'admin'], function($router) {
     Route::post('/add_answer', [AdminController::class, 'addAnswer']);
     Route::get('/get_answer', [UserController::class, 'getAnswers']);
     Route::post('/set_user_answer', [UserController::class, 'setAnswers']);
-    Route::get('/not_found', [AdminController ::class, 'notFound'])->name("not-found");
+    
     
 
