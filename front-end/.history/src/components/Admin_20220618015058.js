@@ -1,7 +1,7 @@
 import React from 'react'
 import "../App.css";
 import Username from "../components/Username";
-import Password from "../components/Password";
+// import Password from "../components/Password";
 
 const Admin = () => {
   return (
