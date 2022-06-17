@@ -1,6 +1,6 @@
 import React from 'react'
 import "../App.css";
-import Username from "../components/Username";
+// import Username from "../components/Username";
 // import Password from "../components/Password";
 
 const Admin = () => {
@@ -11,7 +11,7 @@ const Admin = () => {
         <hr></hr>
         <hr class="hr"></hr>
         <form>
-        <Username/>
+          
           <br />
         </form>
       </div>

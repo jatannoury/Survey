@@ -11,7 +11,7 @@ const Admin = () => {
         <hr></hr>
         <hr class="hr"></hr>
         <form>
-        <Username/>
+          
           <br />
         </form>
       </div>
