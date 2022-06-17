@@ -9,12 +9,12 @@ use App\Http\Controllers\UserController;
 Route::group(['prefix' => 'admin'], function($router) {
     Route::post('/register', [JWTController::class, 'register']);
     Route::post('/login', [JWTController::class, 'login']);
+    Route::post('/add_question', [AdminController::class, 'addQuestion']);
+    Route::post('/add_survey', [AdminController::class, 'addSurvey']);
+    Route::post('/add_answer', [AdminController::class, 'addAnswer']);
 
     Route::group(['middleware' => 'admin'], function($router) {
 
-        Route::post('/add_question', [AdminController::class, 'addQuestion']);
-        Route::post('/add_survey', [AdminController::class, 'addSurvey']);
-        Route::post('/add_answer', [AdminController::class, 'addAnswer']);
         Route::post('/logout', [JWTController::class, 'logout']);
         Route::post('/refresh', [JWTController::class, 'refresh']);
         Route::post('/profile', [JWTController::class, 'profile']);
