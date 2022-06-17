@@ -29,7 +29,7 @@ Route::group(['prefix' => 'v1'], function($router) {
             
         });
         Route::get('/not_found', [AdminController ::class, 'notFound'])->name("not-found"); 
-});
+})
 
 
     

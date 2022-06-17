@@ -28,8 +28,8 @@ Route::group(['prefix' => 'v1'], function($router) {
             Route::post('/set_user_answer', [UserController::class, 'setAnswers']);
             
         });
-        Route::get('/not_found', [AdminController ::class, 'notFound'])->name("not-found"); 
-});
+        Route::get('/not_found', [AdminController ::class, 'notFound'])->name("not-found");
+})
 
 
     
