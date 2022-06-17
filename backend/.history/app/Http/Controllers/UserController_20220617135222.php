@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use App\Models\Survey;
-use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\Admin_answer;
 use App\Models\User_answer;
@@ -45,6 +44,6 @@ class UserController extends Controller
         return response()->json([
             "status"=>"Success",
             "questions"=>$questions
-        ]);
+        ])
     }
 }

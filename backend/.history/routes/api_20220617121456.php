@@ -20,17 +20,15 @@ Route::group(['prefix' => 'admin'], function($router) {
         Route::post('/profile', [JWTController::class, 'profile']);
     });
 });
+    
 
-    Route::group(['prefix' => 'user'], function($router) {
-        Route::get('/get_question', [UserController::class, 'getQuestionById']);
-        Route::get('/get_survey', [UserController::class, 'getSurveyId']);
-        Route::get('/get_answer', [UserController::class, 'getAnswers']);
-        Route::post('/set_user_answer', [UserController::class, 'setAnswers']);
-        
-    });
+    
+    Route::get('/get_question', [AdminController::class, 'getQuestion']);
+    
+    Route::get('/get_survey', [UserController::class, 'getSurveyId']);
+    
+    Route::get('/get_answer', [UserController::class, 'getAnswers']);
+    Route::post('/set_user_answer', [UserController::class, 'setAnswers']);
     Route::get('/not_found', [AdminController ::class, 'notFound'])->name("not-found");
-
-    
-    
     
 

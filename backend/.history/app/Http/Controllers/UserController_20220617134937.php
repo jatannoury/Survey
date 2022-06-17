@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 use App\Models\Survey;
-use App\Models\Question;
 use Illuminate\Http\Request;
 use App\Models\Admin_answer;
 use App\Models\User_answer;
@@ -40,11 +39,7 @@ class UserController extends Controller
     }
 
     public function getQuestionById(Request $request){
-        $survey_id=$request->survey_id;
-        $questions=Question::where("survey_id",$survey_id)->get();
-        return response()->json([
-            "status"=>"Success",
-            "questions"=>$questions
-        ]);
+        $surey_id=
+        Question::where()
     }
 }

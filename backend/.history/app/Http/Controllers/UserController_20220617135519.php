@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Survey;
-use App\Models\Question;
+use App\Models\Survey;
 use Illuminate\Http\Request;
 use App\Models\Admin_answer;
 use App\Models\User_answer;
