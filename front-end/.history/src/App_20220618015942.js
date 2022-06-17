@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import Admin  from "./components/Admin";
-import Radio from "./components/Radio";
+// import Radio from "./components/Radio";
 import Checkbox from "./components/Checkbox";
 // import Drop from "./components/Drop";
 
@@ -13,7 +13,7 @@ function App() {
         </div>
         <div className="box">
           <h1 className="box-title">Lorem Ipsum dolor sit amend</h1>
-          <Radio/>
+          <R/>
         </div>
         
     </div>
