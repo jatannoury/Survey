@@ -12,9 +12,9 @@ function App() {
           <h1>Survey Name</h1>
         </div>
         <div className="box">
-          <h1 className="box-title">Lorem Ipsum dolor sit amend</h1>
+            <h1 className="box-title">Lorem Ipsum dolor sit amend</h1>
             
-        </div>
+          </div>
         
     </div>
 
