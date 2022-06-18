@@ -17,7 +17,7 @@ function App() {
           <h1 className="box-title">Lorem Ipsum dolor sit amend</h1>
           <Text/>
         </div>
-        <Button />
+        <button className="btn">Submit</button>
     </div>
     
 

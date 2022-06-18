@@ -175,11 +175,10 @@ input[type="text"],[type="password"]{
 .btn{
   padding:15px 60px 15px;
   border-radius:5px;
-  margin-left: 1185px;
+  margin-left: 1180px;
   margin-top:50px;
   color:white;
   font-weight:800;
-  background-color: rgb(84, 82, 82);
+  background-color: grey;
   font-size:110%;
-  margin-bottom:50px;
 }

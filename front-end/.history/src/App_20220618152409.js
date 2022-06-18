@@ -4,7 +4,6 @@ import Radio from "./components/Radio";
 import Checkbox from "./components/Checkbox";
 import Drop from "./components/Drop";
 import Text from "./components/Text";
-import Button from "./components/Button";
 
 function App() {
   return (
@@ -17,9 +16,8 @@ function App() {
           <h1 className="box-title">Lorem Ipsum dolor sit amend</h1>
           <Text/>
         </div>
-        <Button />
+        
     </div>
-    
 
     
   );
