@@ -19,7 +19,7 @@ const Admin = () => {
     if (data["access_token"]){
       localStorage.setItem("access_token",data["access_token"]);
       console.log("HEY")
-      window.location.href="/Admin_page"
+      window.location.href="/Adminpage"
     }
     else{
       alert("Wrong username or password")
