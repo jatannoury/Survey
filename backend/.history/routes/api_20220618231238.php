@@ -25,7 +25,7 @@ Route::group(['prefix' => 'v1'], function($router) {
             Route::get('/get_question', [UserController::class, 'getQuestionById']);
             Route::get('/get_survey', [UserController::class, 'getSurveyId']);
             Route::get('/get_answer', [UserController::class, 'getAnswers']);
-            Route::get('/get_surveys', [UserController::class, 'getSurveys']);
+            Route::get('/get_answer', [UserController::class, 'getAnswers']);
             Route::post('/set_user_answer', [UserController::class, 'setAnswers']);
             
         });

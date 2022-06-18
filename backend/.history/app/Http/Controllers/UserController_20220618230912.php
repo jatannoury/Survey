@@ -8,10 +8,7 @@ use App\Models\Admin_answer;
 use App\Models\User_answer;
 class UserController extends Controller
 {
-    public function getSurveys(){
-        return Survey::all();
-    }
-
+    
     public function getSurveyId(Request $request){
         $name=$request->name;
         $survey_id= Survey::where("name",$name)->get();

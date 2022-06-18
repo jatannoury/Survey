@@ -9,7 +9,7 @@ use App\Models\User_answer;
 class UserController extends Controller
 {
     public function getSurveys(){
-        return Survey::all();
+        return 
     }
 
     public function getSurveyId(Request $request){
