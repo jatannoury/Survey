@@ -49,7 +49,7 @@ class UserController extends Controller
         $questions=Question::where("survey_id",$survey_id)->get();
         return response()->json([
             "status"=>"Success",
-            "questions"=>$questions
+            "questions"=>$questions["questions"]
         ]);
     }
 }

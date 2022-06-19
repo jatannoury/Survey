@@ -22,7 +22,7 @@ Route::group(['prefix' => 'v1'], function($router) {
     });
     
         Route::group(['prefix' => 'user'], function($router) {
-            Route::get('/get_questions', [UserController::class, 'getQuestions']);
+            Route::get('/get_question', [UserController::class, 'getQuestions']);
             Route::get('/get_survey', [UserController::class, 'getSurveyId']);
             Route::get('/get_answer', [UserController::class, 'getAnswers']);
             Route::get('/get_surveys', [UserController::class, 'getSurveys']);

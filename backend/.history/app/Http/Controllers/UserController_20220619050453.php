@@ -45,7 +45,7 @@ class UserController extends Controller
 
     public function getQuestions(Request $request){
         $survey_name=$request->survey_name;
-        $survey_id=Survey::where("name",$survey_name)->get()[0]["id"];
+        $survey_id=$request->
         $questions=Question::where("survey_id",$survey_id)->get();
         return response()->json([
             "status"=>"Success",
