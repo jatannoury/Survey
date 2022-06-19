@@ -33,7 +33,7 @@ function load (surveys){
       <div className="surveys">
       {typeof(surveys)==="object"?surveys.map((e)=>{
         console.log(e["name"])
-        return <Surveybox nam={e["name"]} setSurvey={setSurvey} survey={survey}/>
+        return <Surveybox nam={e["name"]} setSurvey={setSurvey} survey={}/>
     }):console.log("HEY")}
       </div>
 

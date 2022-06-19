@@ -3,7 +3,6 @@ import Surveybox from "./Surveybox";
 
 const UserLanding = () => {
   const [surveys, setSurveys] = React.useState("");
-  
   React.useEffect(() => {
     
     async function fetchSurveys() {
@@ -20,12 +19,11 @@ const UserLanding = () => {
     }
     fetchSurveys();
   }, []);
-  const [survey, setSurvey] = React.useState("");
-
 function load (surveys){
+    
 }
   return (
-    
+    const [survey, setSurvey] = React.useState("");
     <div className="survey_container">
       <div className="header">
         <h1>Select the survey</h1>
@@ -33,7 +31,7 @@ function load (surveys){
       <div className="surveys">
       {typeof(surveys)==="object"?surveys.map((e)=>{
         console.log(e["name"])
-        return <Surveybox nam={e["name"]} setSurvey={setSurvey} survey={survey}/>
+        return <Surveybox nam={e["name"]}/>
     }):console.log("HEY")}
       </div>
 

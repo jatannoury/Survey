@@ -1,0 +1,15 @@
+import React from 'react'
+
+const Surveybox = ({nam}) => {
+  const [survey,setSurvey]=React.useState("")
+  return (
+    <div onClick={(e)=>{setSurvey(e.currentTarget.value)
+      console.log(survey)}} className="survey_b">
+    <h2 >{nam}</h2>
+    <a></a>
+  </div>
+ 
+  )
+}
+
+export default Surveybox

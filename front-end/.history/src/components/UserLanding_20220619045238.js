@@ -20,8 +20,6 @@ const UserLanding = () => {
     }
     fetchSurveys();
   }, []);
-  const [survey, setSurvey] = React.useState("");
-
 function load (surveys){
 }
   return (
@@ -33,7 +31,7 @@ function load (surveys){
       <div className="surveys">
       {typeof(surveys)==="object"?surveys.map((e)=>{
         console.log(e["name"])
-        return <Surveybox nam={e["name"]} setSurvey={setSurvey} survey={survey}/>
+        return <Surveybox nam={e["name"]} setSurvey={setSurvey}/>
     }):console.log("HEY")}
       </div>
 
