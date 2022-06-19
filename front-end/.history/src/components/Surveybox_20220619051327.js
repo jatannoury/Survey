@@ -4,16 +4,15 @@ const Surveybox = ({ nam }) => {
   const [survey, setSurvey] = React.useState("");
   React.useEffect(
     (e) => {
-      if(!survey)return
       async function fetchSurveys() {
         const res = await fetch(
-          `http://127.0.0.1:8000/api/v1/user/get_questions?survey_name=${survey}`,
+          `http://127.0.0.1:8000/api/v1/user/get_questions`,
           {
             method: "GET",
             headers: {
               "Content-type": "application/json",
             },
-           
+            body:Json.stri
           }
         );
         const data = await res.json();
