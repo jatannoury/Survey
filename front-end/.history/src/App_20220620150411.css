@@ -206,6 +206,7 @@ input[type="text"],
   margin-top: 100px;
   margin-bottom: 100px;
   border-radius: 10px;
+  justify-content: center;
 }
 
 .color {
@@ -267,13 +268,12 @@ input[type="text"],
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 10px;
-  margin-left: 55%;
+  margin-left: 650px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #f5f5dc;
-  font-weight: 700;
 }
 
 .button:hover {
-  background-color: #9b9b83;
+  background-color: #454e33;
 }

@@ -32,7 +32,7 @@ function App() {
                 <input className="text-input " type="text"></input>
                 <h2>Input Number Of Questions</h2>
                 <input className="text-input " type="text"></input>
-                <div className="admin_box ad">
+                <div className="admin_box">
                   <h2>Add Question Type</h2>
                   <select className="drop admin">
                     <option>dropDown</option>
@@ -42,10 +42,6 @@ function App() {
                   </select>
                   <h2>Add Question</h2>
                   <input className="text-input " type="text"></input>
-                  <h2>Add Answer</h2>
-                  <input className="text-input marg" type="text"></input>
-                  <br />
-                  <button className="button">Submit</button>
                 </div>
               </div>
             </div>

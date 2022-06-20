@@ -44,9 +44,8 @@ function App() {
                   <input className="text-input " type="text"></input>
                   <h2>Add Answer</h2>
                   <input className="text-input marg" type="text"></input>
-                  <br />
-                  <button className="button">Submit</button>
                 </div>
+                <button>Submit</button>
               </div>
             </div>
           }

@@ -41,11 +41,7 @@ function App() {
                     <option>textArea</option>
                   </select>
                   <h2>Add Question</h2>
-                  <input className="text-input " type="text"></input>
-                  <h2>Add Answer</h2>
                   <input className="text-input marg" type="text"></input>
-                  <br />
-                  <button className="button">Submit</button>
                 </div>
               </div>
             </div>
