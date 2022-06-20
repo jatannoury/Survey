@@ -11,8 +11,6 @@ import Surveybox from "./components/Surveybox";
 import UserLanding from "./components/UserLanding";
 import Survey from "./components/Survey";
 import Question from "./components/Question";
-import SurveyB from "./components/SurveyB";
-import AdminPage from "./components/AdminPage";
 function App() {
   return (
     // <Admin/>
@@ -22,7 +20,16 @@ function App() {
         <Route path="/" element={<UserLanding />}></Route>
         <Route path="/survey_page" element={<Survey />}></Route>
         <Route path="/Admin_login" element={<Admin />}></Route>
-        <Route path="/Admin_page" element={<AdminPage />}></Route>
+        <Route
+          path="/Admin_page"
+          element={
+            <div className="admin_container">
+              <div className="header color">
+                <h1>Add a new survey</h1>
+              </div>
+            </div>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

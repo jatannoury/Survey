@@ -10,9 +10,7 @@ import React, { useState, useEffect } from "react";
 import Surveybox from "./components/Surveybox";
 import UserLanding from "./components/UserLanding";
 import Survey from "./components/Survey";
-import Question from "./components/Question";
-import SurveyB from "./components/SurveyB";
-import AdminPage from "./components/AdminPage";
+
 function App() {
   return (
     // <Admin/>
@@ -22,7 +20,22 @@ function App() {
         <Route path="/" element={<UserLanding />}></Route>
         <Route path="/survey_page" element={<Survey />}></Route>
         <Route path="/Admin_login" element={<Admin />}></Route>
-        <Route path="/Admin_page" element={<AdminPage />}></Route>
+        <Route
+          path="/Admin_page"
+          element={
+            <div className="admin_container">
+              <div className="header color">
+                <h1>Add a new survey</h1>
+              </div>
+              <div className="admin_box">
+                <h2>Add Survey Name</h2>
+                <input className="text-input " type="text"></input>
+                <h2>Input Number Of Questions</h2>
+                <input className="text-input " type="text"></input>
+              </div>
+            </div>
+          }
+        ></Route>
       </Routes>
     </BrowserRouter>
   );

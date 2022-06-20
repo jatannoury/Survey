@@ -27,7 +27,7 @@ const Surveybox = ({ nam, setSurvey, survey }) => {
       localStorage.setItem("surveyName", survey);
       setTimeout(() => {
         window.location.href = "/survey_page";
-      }, 2000);
+      }, 3000);
     },
     [survey]
   );

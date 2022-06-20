@@ -200,7 +200,7 @@ input[type="text"],
 .admin_container {
   border: 1px solid #9b9b83;
   width: 70%;
-  /* height: 1500px; */
+  height: 1500px;
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 100px;
